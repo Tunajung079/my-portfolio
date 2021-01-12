@@ -1,17 +1,34 @@
-import React, { Component } from 'react'
-import Navitems from './Navitems'
+import React from 'react'
+import About from '../contents/About'
+import Contact from '../contents/Contact'
+import Education from '../contents/Education'
+import Home from '../contents/Home'
+import Skill from '../contents/Skill'
 
 const Navbar = () => {
   return (
-    <div>
-      <Navbar className='Navbar'>
-        <Navbar.Link href='/'>Home</Navbar.Link>
-        <Navbar.Link href='/'>About</Navbar.Link>
-        <Navbar.Link href='/'>Education</Navbar.Link>
-        <Navbar.Link href='/'>Skill</Navbar.Link>
-        <Navbar.Link href='/'>Contact</Navbar.Link>
-      </Navbar>
+    <div className='Navbar'>
+       WebDev 
+     <ul>
+      <li>
+        Home
+      </li>
+      <li>
+        About
+      </li>
+      <li>
+        Education
+      </li>
+      <li>
+        Skill
+      </li>
+      <li>
+        Contact
+      </li>
+     </ul>
     </div>
+
+    
   )
 }
 
