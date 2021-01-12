@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
-import me from '../img/me.jpg'
+import me from './me.jpg'
 
 
 function Home() {
   return (
     <div className="Home">
-      <img scr={me} width="300" height="500" className="Home__img"></img>
+      <img src={me} width="300" height="500" className="Home__img"/>
       I'm Tuna
     </div>
   );
