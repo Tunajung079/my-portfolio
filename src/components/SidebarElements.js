@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 import {FaBars} from 'react-icons/fa';
+// import { Link as LinkR } from 'react-router-dom';
 
 
 export const SidebarContainer = styled.aside`
-    postition: fixde;
+    position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
@@ -70,3 +71,21 @@ export const SidebarLink = styled(LinkS)`
 //     justify-content: center;
 // `;
 
+// export const SidebarRouter = styled(LinkR)`
+//     border-radius: 50px;
+//     background: #01bf71
+//     white-space: nowrap;
+//     padding: 16px;
+//     outline: none;
+//     border: none;
+//     cursor: pointer;
+//     transition: all 0.2 ease-in-out;
+//     text-decoration: none;
+
+//     &:hover {
+//         transition: all 0.2s ease-in-out;
+//         background: #fff;
+//         color: #010606;
+//     }
+
+// `

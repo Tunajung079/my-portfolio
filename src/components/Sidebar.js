@@ -4,7 +4,9 @@ import {SidebarContainer,
         CloseIcon, 
         SidebarWrapper,
         SidebarMenu, 
-        SidebarLink} from './SidebarElements';
+        SidebarLink,
+        SidebarWrap,
+        SidebarRouter} from './SidebarElements';
 
 function Sidebar() {
   return (
@@ -19,6 +21,11 @@ function Sidebar() {
                 <SidebarLink to ="Skill"> Skill </SidebarLink>
                 <SidebarLink to ="Contact"> Contact </SidebarLink>
             </SidebarMenu>
+            {/* <SidebarWrap>
+              <SidebarRouter>
+                Sign In
+              </SidebarRouter>
+            </SidebarWrap> */}
         </SidebarWrapper>
     </SidebarContainer>
   );
