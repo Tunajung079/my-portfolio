@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <Sidebar/>
-      <Navbar />
+      <Home/>
       {/* <About/>
       <Education/>
       <Skill/>

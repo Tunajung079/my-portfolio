@@ -8,18 +8,18 @@ import {SidebarContainer,
         SidebarWrap,
         SidebarRouter} from './SidebarElements';
 
-function Sidebar() {
+function Sidebar({ isOpen, toggle}) {
   return (
-    <SidebarContainer>
-        <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
             <CloseIcon/>
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to ="About"> About </SidebarLink>
-                <SidebarLink to ="Education"> Education </SidebarLink>
-                <SidebarLink to ="Skill"> Skill </SidebarLink>
-                <SidebarLink to ="Contact"> Contact </SidebarLink>
+                <SidebarLink to ="About"  onClick={toggle}> About </SidebarLink>
+                <SidebarLink to ="Education"  onClick={toggle}> Education </SidebarLink>
+                <SidebarLink to ="Skill"  onClick={toggle}> Skill </SidebarLink>
+                <SidebarLink to ="Contact"  onClick={toggle}> Contact </SidebarLink>
             </SidebarMenu>
             {/* <SidebarWrap>
               <SidebarRouter>

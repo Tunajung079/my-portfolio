@@ -1,34 +1,22 @@
-// import React from 'react';
-// import {Nav, NavbarContainer, NavLogo} from './'
+import React, {useState} from 'react';
+import '../App.css';
+import Sidebar from './Sidebar';
+import Navbar from './Navbar'
+import { BrowserRouter as Router} from 'react-router-dom';
 
+const Home = () => {
+    const [isOpen, setIsOpen] = useState( false )
 
-// const Navbar = () => {
-//   return (
-//     <>
-//       <Nav>
-//         <NavbarContainer>
-//           <NavLogo>Webdev</NavLogo>
-//         </NavbarContainer>
-//       </Nav>
-//     </>
-    
-//   );
-// };
+    const toggle = () => {
+        setIsOpen(!isOpen)
+    }
 
-// export default Navbar;
+  return (
+    <>
+        <Sidebar isOpen={isOpen}  toggle={toggle} />
+        <Navbar toggle={toggle} />
+    </>
+  );
+}
 
-
-// import React from 'react';
-// import '../App.css';
-
-
-// function Home() {
-//   return (
-//     <div className="Home">
-      
-//       I'm Tuna
-//     </div>
-//   );
-// }
-
-// export default Home;
+export default Home;
