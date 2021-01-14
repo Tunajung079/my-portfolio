@@ -7,16 +7,18 @@ import Contact from './components/Contact'
 import Education from './components/Education'
 import Home from './components/Home'
 import Skill from './components/Skill'
+import Sidebar from './components/Sidebar';
 
 
 const App = () => {
   return (
     <Router>
+      <Sidebar/>
       <Navbar />
-      <About/>
+      {/* <About/>
       <Education/>
       <Skill/>
-      <Contact/>
+      <Contact/> */}
     </Router>
         
       
