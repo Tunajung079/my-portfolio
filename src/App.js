@@ -1,24 +1,26 @@
 import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import About from '../src/contents/About'
-import Contact from '../src/contents/Contact'
-import Education from '../src/contents/Education'
-import Home from '../src/contents/Home'
-import Skill from '../src/contents/Skill'
+import { BrowserRouter as Router} from 'react-router-dom';
+import About from './components/About'
+import Contact from './components/Contact'
+import Education from './components/Education'
+import Home from './components/Home'
+import Skill from './components/Skill'
+
 
 const App = () => {
   return (
-    <div className='App'>
-      <Navbar></Navbar>
-      <div>
-        <Home />
-        <About />
-        <Education />
-        <Skill />
-        <Contact />
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <About/>
+      <Education/>
+      <Skill/>
+      <Contact/>
+    </Router>
+        
+      
+    
   )
 }
 

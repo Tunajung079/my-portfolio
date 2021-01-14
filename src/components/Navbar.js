@@ -1,35 +1,45 @@
-import React from 'react'
-import About from '../contents/About'
-import Contact from '../contents/Contact'
-import Education from '../contents/Education'
-import Home from '../contents/Home'
-import Skill from '../contents/Skill'
+import React from 'react';
+import {FaBars} from 'react-icons/fa';
+import {
+  Nav, 
+  NavbarContainer, 
+  NavLogo, 
+  MobileIcon, 
+  NavMenu, 
+  NavItem, 
+  NavLinks
+} from './NavElements';
+
 
 const Navbar = () => {
   return (
-    <div className='Navbar'>
-       WebDev 
-     <ul>
-      <li>
-        Home
-      </li>
-      <li>
-        About
-      </li>
-      <li>
-        Education
-      </li>
-      <li>
-        Skill
-      </li>
-      <li>
-        Contact
-      </li>
-     </ul>
-    </div>
-
+    <>
+      <Nav>
+        <NavbarContainer>
+          <NavLogo to="/">Webdev</NavLogo>
+          <MobileIcon>
+            <FaBars/>
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="About">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="Education">Education</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="Skill">Skill</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="Contact">Contact</NavLinks>
+            </NavItem>
+          </NavMenu>
+         
+        </NavbarContainer>
+      </Nav>
+    </>
     
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
