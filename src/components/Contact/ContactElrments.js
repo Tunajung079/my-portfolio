@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const SkillContainer = styled.div`
+export const ContactContainer = styled.div`
     height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    background: #010606;
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -18,11 +18,11 @@ export const SkillContainer = styled.div`
 
 `;
 
-export const SkillWrapper = styled.div`
+export const ContactWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
@@ -36,8 +36,8 @@ export const SkillWrapper = styled.div`
     }
 `;
 
-export const SkillCard = styled.div`
-    background: #010606;
+export const ContactCard = styled.div`
+    background: #000;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -53,15 +53,15 @@ export const SkillCard = styled.div`
     }
 `;
 
-export const SkillIcon = styled.img`
+export const ContactIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `;
 
-export const SkillH1 = styled.h1`
+export const ContactH1 = styled.h1`
     font-size: 2.5rem;
-    color: #000;
+    color: #fff;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
@@ -69,13 +69,13 @@ export const SkillH1 = styled.h1`
     }
 `;
 
-export const SkillH2 = styled.h2`
+export const ContactH2 = styled.h2`
     font-size: 1rem;
     color: #fff;
     margin-bottom: 10px;
 `;
 
-export const SkillP = styled.p`
+export const ContactP = styled.p`
     font-size: 1rem;
     text-align: center;
 `;

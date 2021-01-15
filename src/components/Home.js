@@ -5,6 +5,8 @@ import Navbar from './Navbar'
 import InfoSection from './InfoSection/InfoSection';
 import About from './About/About';
 import Education from './Education/Education';
+import Skill from './Skill/Skill';
+import Contact from './Contact/Contact';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState( false )
@@ -20,6 +22,8 @@ const Home = () => {
         <InfoSection/>
         <About/>
         <Education/>
+        <Skill/>
+        <Contact/>
     </>
   );
 }
