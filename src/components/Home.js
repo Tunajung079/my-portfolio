@@ -7,6 +7,7 @@ import About from './About/About';
 import Education from './Education/Education';
 import Skill from './Skill/Skill';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState( false )
@@ -24,6 +25,7 @@ const Home = () => {
         <Education/>
         <Skill/>
         <Contact/>
+        <Footer/>
     </>
   );
 }

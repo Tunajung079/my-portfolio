@@ -62,7 +62,7 @@ export const SkillIcon = styled.img`
 export const SkillH1 = styled.h1`
     font-size: 2.5rem;
     color: #000;
-    margin-bottom: 64px;
+    margin-bottom: 100px;
 
     @media screen and (max-width: 480px) {
         font-size: 2rem;
