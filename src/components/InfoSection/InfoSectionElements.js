@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '010606')};
+    background: #000;
+    // background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '010606')};
 
     @media screen and (max-widrh: 768px) {
         padding: 100px 0;
@@ -51,7 +52,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #e06f1f;
+    color: #f4623a;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -61,7 +62,7 @@ export const TopLine = styled.p`
 `;
 
 export const Heading = styled.h1`
-    color: #e06f1f;
+    color: #f4623a;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -79,16 +80,16 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : "#000")};
+    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')}
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 529px;
     height: 100%;
 `;
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
+    margin: 0 0 50px 0;
+    padding-right: 5000;
 `;

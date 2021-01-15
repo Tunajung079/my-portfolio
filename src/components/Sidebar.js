@@ -5,8 +5,7 @@ import {SidebarContainer,
         SidebarWrapper,
         SidebarMenu, 
         SidebarLink,
-        SidebarWrap,
-        SidebarRouter} from './SidebarElements';
+        } from './SidebarElements';
 
 function Sidebar({ isOpen, toggle}) {
   return (

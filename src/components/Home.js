@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import '../App.css';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar'
-import { BrowserRouter as Router} from 'react-router-dom';
 import InfoSection from './InfoSection/InfoSection';
+import { homeObjOne } from './InfoSection/Data';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState( false )

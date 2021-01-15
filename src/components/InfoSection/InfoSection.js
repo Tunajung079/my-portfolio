@@ -1,25 +1,29 @@
 import React from 'react';
-import { Button } from 'react-scroll';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img } from './InfoSectionElements';
+import me from './me.png';
 
 
-function InfoSection() {
+const InfoSection = () => {
     return (
         <>
-            <InfoContainer>
+            <InfoContainer >
                 <InfoWrapper>
-                    <InfoRow>
+                    <InfoRow >
                         <Column1>
-                        <TextWrapper>
-                            <TopLine>TopLine</TopLine>
-                            <Heading>Heading</Heading>
-                            <Subtitle>Subtitle</Subtitle>
-                        </TextWrapper>
+                        <ImgWrap>
+                            <img src={me}
+                                width="529"
+                                height="555"
+                            />
+                            </ImgWrap>
                         </Column1>
                         <Column2>
-                            <ImgWrap>
-                            <Img/>
-                            </ImgWrap>
+                        <TextWrapper>
+                            <TopLine>HI , I AM</TopLine>
+                            <Heading >NICHAKAN JAISAKSERN</Heading>
+                            <Subtitle >Computer Emgineering</Subtitle>
+                        </TextWrapper>
+                            
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
