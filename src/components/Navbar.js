@@ -1,4 +1,5 @@
 import React from 'react';
+import { ImPacman } from "react-icons/im";
 import {FaBars} from 'react-icons/fa';
 import {
   Nav, 
@@ -16,8 +17,10 @@ const Navbar = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Portfolio</NavLogo>
+          
+          <NavLogo to="/"><ImPacman color='#fff'/> Portfolio </NavLogo>
           <MobileIcon onClick={toggle}>
+            
             <FaBars/>
           </MobileIcon>
           <NavMenu>
