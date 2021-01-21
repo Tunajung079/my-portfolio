@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { ImPacman } from "react-icons/im";
+import { animateScroll as scroll} from 'react-scroll';
 import {FaBars} from 'react-icons/fa';
+
 import {
   Nav, 
   NavbarContainer, 
@@ -13,30 +15,72 @@ import {
 
 
 const Navbar = ({toggle}) => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 80 ) {
+      setScrollNav(true)
+    } else{
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          
-          <NavLogo to="/"><ImPacman color='#fff'/> Portfolio </NavLogo>
+          <NavLogo to="/" onClick={toggleHome}><ImPacman color='#fff'/> Portfolio </NavLogo>
           <MobileIcon onClick={toggle}>
-            
-            <FaBars/>
+            {/* <FaBars/> */}
           </MobileIcon>
-          <NavMenu>
+          {/* <NavMenu>
             <NavItem>
-              <NavLinks to="About">About</NavLinks>
+              <NavLinks to='About' 
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-100}
+              >
+                About
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Education">Education</NavLinks>
+              <NavLinks to="Education"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-100}
+              >Education</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Skill">Skill</NavLinks>
+              <NavLinks to="Skill"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-100}
+              >Skill</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="Contact">Contact</NavLinks>
+              <NavLinks to="Contact"
+              smooth={true} 
+              duration={500} 
+              spy={true} 
+              exact='true' 
+              offset={-100}
+              >Contact</NavLinks>
             </NavItem>
-          </NavMenu>
+          </NavMenu> */}
          
         </NavbarContainer>
       </Nav>
