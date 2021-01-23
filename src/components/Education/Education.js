@@ -24,7 +24,7 @@ const Education = () => {
         <EducationCard>
           <EducationIcon src={school}/>
           <EducationH2>Mathematics-Science Programme</EducationH2>
-          <EducationP>chiangDao Wittayakom School</EducationP>
+          <EducationP>ChiangDao Wittayakom School</EducationP>
           <EducationP>2013 - 2016</EducationP>
         </EducationCard>
       </EducationWrapper>

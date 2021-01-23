@@ -1,5 +1,6 @@
 import React from 'react';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img } from './AboutElements';
+import me2 from './me2.png';
 
 
 function About() {
@@ -12,17 +13,15 @@ function About() {
                         {/* <TopLine>HI , I AM</TopLine> */}
                             <Heading >About Me</Heading>
                             <Subtitle >Computer Emgineering</Subtitle>
-                        {/* <ImgWrap>
-                            <img src={}
-                                width="529"
-                                height="555"
-                            />
-                            </ImgWrap> */}
+                        
                         </Column1>
                         <Column2>
-                        <TextWrapper>
-                            
-                        </TextWrapper>
+                        <ImgWrap>
+                            <img src={me2}
+                                width="385"
+                                height="585"
+                            />
+                            </ImgWrap>
                             
                         </Column2>
                     </InfoRow>

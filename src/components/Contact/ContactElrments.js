@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +22,7 @@ export const ContactWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr ;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;

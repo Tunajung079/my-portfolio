@@ -25,6 +25,12 @@ const Skill = () => {
         <SkillCard>
           <SkillH2>Python</SkillH2>
         </SkillCard>
+        <SkillCard>
+          <SkillH2>flutter</SkillH2>
+        </SkillCard>
+        <SkillCard>
+          <SkillH2>image processing</SkillH2>
+        </SkillCard>
       </SkillWrapper>
     </SkillContainer>
     
